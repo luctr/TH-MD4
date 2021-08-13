@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>List Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body onload="findAllCountry()">
+
+<table class="table"></table>
+<form id="add-city">
+    <table>
+        <tr scope="col">
+            <td >Name :</td>
+            <td><input type="text" id="name" placeholder="City name"></td>
+            <td id="message"></td>
+        </tr>
+        <tr scope="col">
+            <td>Price:</td>
+            <td><input type="number" id="area" placeholder="Area"></td>
+        </tr>
+        <tr scope="col">
+            <td>Quantity :</td>
+            <td><input type="text" id="population" placeholder="Population"></td>
+        </tr>
+
+        <tr scope="col">
+            <td>Description :</td>
+            <td><input type="text" id="description" placeholder="description"></td>
+        </tr>
+        <tr scope="col">
+            <td>GDP :</td>
+            <td><input type="text" id="gdp" placeholder="description"></td>
+        </tr>
+        <tr scope="col">
+            <td>Country :</td>
+            <td>
+                <select id="country">
+                </select>
+            </td>
+        </tr>
+        <tr scope="col">
+            <td></td>
+            <td><input type="submit" value="Add" onclick="addNewCountry()"></td>
+        </tr>
+    </table>
+</form>
+<h1>City List</h1>
+<table id="cityList" scope="col">
+</table>
+<form id ="form"></form>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
+</body>
+</html>
